@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Arktur
+Comment=Arktur P2P Cryptocurrency
+Comment[fr]=Arktur, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=Arktur, eşten eşe kriptografik sanal para birimi
+Exec=arktur-qt %u
+Terminal=false
+Type=Application
+Icon=arktur128
+MimeType=x-scheme-handler/arktur;
+Categories=Office;Finance;
