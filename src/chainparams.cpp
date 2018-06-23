@@ -154,35 +154,7 @@ public:
         genesis.nTime = 1529338744;  //Monday, June 18, 2018 4:19:04 PM GMT
         genesis.nBits = 0x1e0ffff0;
         genesis.nNonce = 0x3ad1;
-        
-        
-        /*
-        printf("Generating genesis block...\n");
 
-        uint32_t nounce = 1;
-		while(1) {
-            //printf("Nounce: %d\n", nounce);
-			genesis.nNonce = nounce;
-
-			hashGenesisBlock = genesis.GetHash();
-			
-			if(hashGenesisBlock.GetHex() < std::string("0000ffffff000000000000000000000000000000000000000000000000000000")) {
-			//if(hashGenesisBlock.GetHex() < bnProofOfWorkLimit.GetHex()) {
-			//if(consensus.hashGenesisBlock.GetHex() < std::string("0000082da923a04678394f873852c7f08b777af30224b6e23296f586370e80ae")) {
-				printf("nounce: %x\n",nounce);
-				break;
-			} else {
-				if( nounce % 10000 == 0)
-					printf("nounce: %x, hash: %s, merklehash:%s\n",nounce, hashGenesisBlock.GetHex().c_str(),genesis.hashMerkleRoot.ToString().c_str());
-				++nounce;
-			}
-		} 
-		
-        printf("genesis: %s\n",hashGenesisBlock.GetHex().c_str());
-        printf("merklehash: %s\n",genesis.hashMerkleRoot.ToString().c_str());
-		*/
-		
-		
         hashGenesisBlock = genesis.GetHash();
         assert(hashGenesisBlock == uint256("00004d32206117ef71b3ce58d2cc2d6060264bf1aaf21dce271702565ae414d1"));
         assert(genesis.hashMerkleRoot == uint256("39d3a95944b7f9e253bf3614fca80bb1c0230f338dc010ec4fd9280a8e8e4313"));
@@ -193,7 +165,7 @@ public:
         vSeeds.push_back(CDNSSeedData("seed3", "seed4.arkturcoin.net"));
         vSeeds.push_back(CDNSSeedData("seed3", "seed5.arkturcoin.net"));
         vSeeds.push_back(CDNSSeedData("explorer", "80.211.6.50"));
-                
+
 		base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 23);
 		base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 83);
 		base58Prefixes[SECRET_KEY] = std::vector<unsigned char>(1, 239);

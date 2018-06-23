@@ -45,8 +45,8 @@ const std::string CLIENT_NAME("Arktur Core");
 //! git will put "#define GIT_ARCHIVE 1" on the next line inside archives.
 #define GIT_ARCHIVE
 #ifdef GIT_ARCHIVE
-#define GIT_COMMIT_ID "0"
-#define GIT_COMMIT_DATE "Sun, 17 Jun 2018 16:00:00 GMT"
+#define GIT_COMMIT_ID "20180620"
+#define GIT_COMMIT_DATE "Sun, 20 Jun 2018 16:00:00 GMT"
 #endif
 
 #define BUILD_DESC_WITH_SUFFIX(maj, min, rev, build, suffix) \
