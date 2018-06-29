@@ -19,18 +19,18 @@ BitcoinUnits::BitcoinUnits(QObject* parent) : QAbstractListModel(parent),
 QList<BitcoinUnits::Unit> BitcoinUnits::availableUnits()
 {
     QList<BitcoinUnits::Unit> unitlist;
-    unitlist.append(ART);
-    unitlist.append(mART);
-    unitlist.append(uART);
+    unitlist.append(ARKT);
+    unitlist.append(mARKT);
+    unitlist.append(uARKT);
     return unitlist;
 }
 
 bool BitcoinUnits::valid(int unit)
 {
     switch (unit) {
-    case ART:
-    case mART:
-    case uART:
+    case ARKT:
+    case mARKT:
+    case uARKT:
         return true;
     default:
         return false;
@@ -40,11 +40,11 @@ bool BitcoinUnits::valid(int unit)
 QString BitcoinUnits::id(int unit)
 {
     switch (unit) {
-    case ART:
+    case ARKT:
         return QString("arktur");
-    case mART:
+    case mARKT:
         return QString("marktur");
-    case uART:
+    case uARKT:
         return QString::fromUtf8("uarktur");
     default:
         return QString("???");
@@ -55,23 +55,23 @@ QString BitcoinUnits::name(int unit)
 {
     if (Params().NetworkID() == CBaseChainParams::MAIN) {
         switch (unit) {
-        case ART:
-            return QString("ART");
-        case mART:
-            return QString("mART");
-        case uART:
-            return QString::fromUtf8("μART");
+        case ARKT:
+            return QString("ARKT");
+        case mARKT:
+            return QString("mARKT");
+        case uARKT:
+            return QString::fromUtf8("μARKT");
         default:
             return QString("???");
         }
     } else {
         switch (unit) {
-        case ART:
-            return QString("tART");
-        case mART:
-            return QString("mtART");
-        case uART:
-            return QString::fromUtf8("μtART");
+        case ARKT:
+            return QString("tARKT");
+        case mARKT:
+            return QString("mtARKT");
+        case uARKT:
+            return QString::fromUtf8("μtARKT");
         default:
             return QString("???");
         }
@@ -82,23 +82,23 @@ QString BitcoinUnits::description(int unit)
 {
     if (Params().NetworkID() == CBaseChainParams::MAIN) {
         switch (unit) {
-        case ART:
-            return QString("ART");
-        case mART:
-            return QString("Milli-ART (1 / 1" THIN_SP_UTF8 "000)");
-        case uART:
-            return QString("Micro-ART (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
+        case ARKT:
+            return QString("ARKT");
+        case mARKT:
+            return QString("Milli-ARKT (1 / 1" THIN_SP_UTF8 "000)");
+        case uARKT:
+            return QString("Micro-ARKT (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
         default:
             return QString("???");
         }
     } else {
         switch (unit) {
-        case ART:
-            return QString("TestARTs");
-        case mART:
-            return QString("Milli-TestART (1 / 1" THIN_SP_UTF8 "000)");
-        case uART:
-            return QString("Micro-TestART (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
+        case ARKT:
+            return QString("TestARKTs");
+        case mARKT:
+            return QString("Milli-TestARKT (1 / 1" THIN_SP_UTF8 "000)");
+        case uARKT:
+            return QString("Micro-TestARKT (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
         default:
             return QString("???");
         }
@@ -108,11 +108,11 @@ QString BitcoinUnits::description(int unit)
 qint64 BitcoinUnits::factor(int unit)
 {
     switch (unit) {
-    case ART:
+    case ARKT:
         return 100000000;
-    case mART:
+    case mARKT:
         return 100000;
-    case uART:
+    case uARKT:
         return 100;
     default:
         return 100000000;
@@ -122,11 +122,11 @@ qint64 BitcoinUnits::factor(int unit)
 int BitcoinUnits::decimals(int unit)
 {
     switch (unit) {
-    case ART:
+    case ARKT:
         return 8;
-    case mART:
+    case mARKT:
         return 5;
-    case uART:
+    case uARKT:
         return 2;
     default:
         return 0;

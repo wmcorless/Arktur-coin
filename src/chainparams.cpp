@@ -114,7 +114,7 @@ public:
         nToCheckBlockUpgradeMajority = 1000;
         nMinerThreads = 0;
         nTargetTimespan = 1 * 60; // Arktur: 1 day  
-        nTargetSpacing = 80; //Arktur: 75 seconds per block + 10%
+        nTargetSpacing = 60; 
         nMaturity = 120;
         nMasternodeCountDrift = 20;
         nMaxMoneyOut = 120000000 * COIN; //120,000,000
