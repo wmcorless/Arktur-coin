@@ -26,10 +26,8 @@ Drag Arktur-Qt to your applications folder, and then run Arktur-Qt.
 
 ### Need Help?
 
-* See the documentation at the [Arktur Wiki](https://en.bitcoin.it/wiki/Main_Page) ***TODO***
-for help and more information.
-* Ask for help on [BitcoinTalk](https://bitcointalk.org/index.php) or on the [Arktur Forum](http://Arkturcoin.com/).
-* Join one of our Discord groups [Arktur Discord Groups](https://discord.gg/YcnvMqt).
+* Ask for help on [BitcoinTalk](https://bitcointalk.org/index.php) or on the [Arktur Forum](http://arktur.cc/).
+* Join one of our Discord groups [Arktur Discord Groups](https://discord.gg/RBQHsFC).
 
 Building
 ---------------------
@@ -55,8 +53,8 @@ The Arktur repo's [root README](https://github.com/eastcoastcrypto/Arktur/blob/m
 
 ### Resources
 
-* Discuss on the [BitcoinTalk](https://bitcointalk.org/index.php?topic=1262920.0) .
-* Join the [Arktur-Dev] Discord groups [Arktur Discord Groups](https://discord.gg/YcnvMqt).
+* Discuss on the [BitcoinTalk](https://bitcointalk.org/index.php?topic=4491298.0) .
+* Join the [Arktur-Dev] Discord groups [Arktur Discord Groups](https://discord.gg/RBQHsFC).
 
 ### Miscellaneous
 - [Assets Attribution](assets-attribution.md)
