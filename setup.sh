@@ -9,7 +9,7 @@ COIN_PATH='/usr/local/bin/'
 COIN_REPO='https://github.com/Arkturdev/Arktur-coin.git'
 COIN_TGZ='https://github.com/Arkturdev/Arktur-coin/releases/download/1.1.1/Arkturcoin-Ubuntu-daemon-1.1.1.tgz'
 COIN_ZIP=$(echo $COIN_TGZ | awk -F'/' '{print $NF}')
-COIN_NAME='Arktur'
+COIN_NAME='arktur'
 COIN_PORT=40001
 RPC_PORT=6070
 
